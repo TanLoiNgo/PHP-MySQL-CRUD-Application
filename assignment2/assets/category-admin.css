@@ -1,0 +1,24 @@
+#category-admin, #modify-category, #add-category{
+    padding: 5%;
+    height: 100%;
+}
+table{
+    width: 100%;
+    margin: 10px 0 20px 0;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+#category-admin a{
+    color: #4998F7;
+    text-decoration: underline;
+}
+#modify-category, #add-category{
+    width: 100%;
+}
+#modify-category form, #add-category form{
+    margin: 10px 20px; 
+}

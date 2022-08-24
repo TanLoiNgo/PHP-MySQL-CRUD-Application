@@ -1,0 +1,2 @@
+[13-Dec-2020 06:26:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/f0t34/public_html/comp1230/assignments/assignment2/php/add-item.php:61) in /home/f0t34/public_html/comp1230/assignments/assignment2/php/add-item.php on line 71
+[13-Dec-2020 06:49:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/f0t34/public_html/comp1230/assignments/assignment2/php/add-item.php:59) in /home/f0t34/public_html/comp1230/assignments/assignment2/php/add-item.php on line 69

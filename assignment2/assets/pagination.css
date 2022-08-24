@@ -1,0 +1,23 @@
+.pagination {
+    float: right;
+    padding: 30px 125px 50px 102px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 450ms;
+    border: 1px solid #ddd;
+}
+
+.pagination a:hover{
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.pagination a.active {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid #000000;
+}

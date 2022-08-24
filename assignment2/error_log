@@ -1,0 +1,4 @@
+[13-Dec-2020 05:15:41 UTC] PHP Warning:  include(/template/offline.html): failed to open stream: No such file or directory in /home/f0t34/public_html/comp1230/assignments/assignment2/index.php on line 43
+[13-Dec-2020 05:15:41 UTC] PHP Warning:  include(): Failed opening '/template/offline.html' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/f0t34/public_html/comp1230/assignments/assignment2/index.php on line 43
+[13-Dec-2020 05:15:46 UTC] PHP Warning:  include(/template/offline.html): failed to open stream: No such file or directory in /home/f0t34/public_html/comp1230/assignments/assignment2/index.php on line 43
+[13-Dec-2020 05:15:46 UTC] PHP Warning:  include(): Failed opening '/template/offline.html' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/f0t34/public_html/comp1230/assignments/assignment2/index.php on line 43

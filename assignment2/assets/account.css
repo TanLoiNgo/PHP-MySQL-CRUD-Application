@@ -1,0 +1,21 @@
+#AccountInfo{
+    background-color: rgb(250, 248, 248);
+    padding: 10% 20% 20% 20%;
+}
+#AccountInfo h1{
+    font-size: 48px;
+}
+#AccountInfo h3{
+    margin: 20px 0;
+}
+
+#AccountInfo p{
+    color: rgb(66, 65, 65);
+    text-decoration: underline;
+}
+
+#changePassword{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}

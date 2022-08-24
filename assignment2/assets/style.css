@@ -1,0 +1,697 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('./account.css');
+@import url('./item.css');
+@import url('./dash-board.css');
+@import url('./category-admin.css');
+@import url('./form.css');
+@import url('./pagination.css');
+
+/* Global adjustment */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: ‘Roboto’, sans-serif;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+a{
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+    transition: 200ms;
+}
+
+li{
+    list-style: none;
+}
+
+.white{
+    color: white;
+}
+
+.black{
+    color: black;
+}
+
+.red{
+    color: red;
+}
+
+#logo{
+    font-family: 'Cinzel', serif;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+.black-section{
+    background: black;
+}
+
+.tomato{
+    color: tomato;
+}
+
+.grey{
+    font-family: ‘Raleway’, sans-serif;
+    color:rgb(190, 189, 189);
+}
+
+.greyOp{
+    color: rgba(255, 255, 255, 0.482);
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex-space-bwt{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.black-btn{
+    background-color: black;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    padding: 7px 20px;
+    display: inline-block;
+    margin: 20px 10px 0 0;
+    font-size: 14px;
+    transition: 450ms;
+    border: 2px solid black;
+}
+
+.black-btn:hover{
+    background-color: white;
+    color: black;
+    
+}
+/* !Global adjustment */
+
+.title-assign{
+    width: auto;
+    background-color: #F4CE92;
+    padding: 15px;
+}
+
+.title-assign p{
+    text-align: center;
+    color: #1A1D24;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+nav{
+    display: flex;
+    background-color: black;
+    padding: 1.5% 5%;
+    justify-content: space-between;
+}
+
+#left-nav{
+    display: flex;
+    flex-direction: row;
+}
+
+#left-nav div{
+    display: flex;
+    margin-right: 100px;
+}
+
+#left-nav div img{
+    width: 50px;
+    margin-right: 5px;
+}
+
+#left-nav div ul{
+    display: flex;
+    flex-direction: row;
+}
+
+#left-nav div ul li{
+    margin: 0 45px;
+}
+
+#left-nav div ul li a:hover, #right-nav a:hover{
+    color: white;
+}
+
+#left-nav div, #right-nav, #burger-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow{
+    margin-left: 5px;
+}
+
+img[alt="downArrowWhite"]{
+    transform: rotate(-90deg);
+    width: 15px !important;
+}
+
+.dropdown:hover .arrow{
+    animation: rotate 2s;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(-90deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
+    
+}
+
+#right-nav img, #burger-nav img{
+    width: 20px;
+}
+
+#right-nav a{
+    margin-left: 20px;
+}
+
+#burger-nav{
+    display: none !important;
+}
+
+#sub-nav{
+    display: none;
+}
+/* Dropdown Categories */
+
+.dropdown-content{
+    display: none !important;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex !important;
+    position: absolute;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 10px;
+    padding: 40px 50px 25px 20px;
+}
+.dropdown-content a{
+    margin: 20px 0;
+}
+
+
+/* !Dropdown Categories */
+
+
+.title-section{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0 7% 0;
+}
+
+.title-logo{
+    font-family: 'Cinzel', serif;
+    font-size: 66px;
+    color: black;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.title-section h1{
+    font-family: ‘Raleway’, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(71, 71, 71);
+}
+
+.title-section div a{
+    text-decoration: underline;
+    display: inline-block;
+    font-family: ‘Raleway’, sans-serif;
+    margin: 20px 10px;
+    color: #F4CE92;
+    font-size: 18px
+}
+#background{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 80vw;
+    height: 70vh;
+    margin-top: 70px;
+}
+
+img[alt="bg-left"]{
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    width: 20%;
+    z-index: 1;
+}
+img[alt="bg-mid"]{
+    position: absolute;
+    left: calc(50% - 70%/ 2);
+    width: 70%;
+    bottom: 0;
+}
+
+img[alt="bg-right"]{
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    width: 30%;
+    z-index: 1;
+}
+
+
+/* Cloth section */
+
+
+.cloth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    padding: 5% 0;
+}
+
+.headding-text p {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.cloth div img{
+    width: 500px;
+}
+
+.headding-text h1{
+    font-family: 'Cinzel', serif;
+    font-size: 56px;
+    text-align: center;
+}
+
+.headding-text h2{
+    font-family: ‘Raleway’, sans-serif;
+    color: tomato;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.headding-text div {
+    display: flex;
+    justify-content: center;
+}
+.headding-text div a{
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 10px;
+    text-align: center;
+    transition: 450ms;
+}
+
+.cloth .headding-text div a:hover{
+    color: white;
+}
+
+/* !Cloth section */
+ 
+/* Technology section */
+    .technology{
+        display: flex;
+        flex-direction: row;
+        padding: 5% 10%;
+        background: white;
+        justify-content: space-between
+    }
+
+    .tech-side {
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    .tech-side img{
+        width: 600px;
+        margin-top: 25px;
+    }
+    .tech-side h1{
+        font-size: 28px;
+        font-family: ‘Raleway’, sans-serif;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .tech-right img{
+        width: 350px;
+    }
+    .tech-side a {
+        color: rgb(85, 84, 84);
+    }
+
+    .tech-side a:hover{
+        color: black;
+    }
+/* !Technology section */
+
+/* Watch section */
+    .watch{
+        padding: 2% 20%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .watch img{
+        width: 600px;
+    }
+/* !Watch section */
+
+
+/* Footer section */
+    footer{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 0 5% 0;
+    }
+    footer div:first-child{
+        background-color: rgb(21, 21, 21);
+        text-align: center;
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    footer div:first-child a{
+        color: rgb(191, 189, 189);
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    footer div:first-child a:hover{
+        color: rgb(255, 255, 255);
+    }
+    footer div img{
+        width: 50px;
+    }
+
+    #footer-nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #footer-nav ul li{
+        margin: 20px 10px;
+    }
+
+    footer p{
+        color: rgb(140, 140, 140);
+        margin: 0 20px;
+        transition: 350ms;
+    }
+
+    footer p:hover{
+        color: white;
+    }
+
+    #name{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+/* !Footer section */
+
+
+/* Login Form */
+.form{
+    padding:5%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    background-color:black;
+}
+
+.form h2{
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+input[name="username"], input[name="password"]{
+    margin: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    height: 20px;
+    width: 300px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+    font-size: 14px;
+}
+input[name="username"]::placeholder, input[name="password"]::placeholder{
+    color: rgb(205, 205, 205);
+}
+
+input[type="submit"]{
+    margin-top: 30px;
+    width: 10%;
+    padding: 10px 10px;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    background-color: transparent;
+}
+/* !Login Form */
+
+
+@media only screen and (max-width: 1080px){
+
+    /* navigation bar */
+    #right-nav{
+        display: none !important;
+    }
+    
+    #burger-nav{
+        display: flex !important;
+    }
+    #left-menu{  
+        display: none !important;
+    }
+
+    #sub-nav{
+        display: none;
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sub-nav div ul{
+        flex-direction: column !important;
+    }
+    #sub-nav ul li{
+        margin: 30px 0;
+    }
+    #sub-nav ul li a{
+        font-size: 48px;
+        
+    }
+    #sub-nav  img[alt="downArrowWhite"]{
+        width: 40px !important;
+    }
+    /* !navigation bar */
+
+    #background{
+        max-height: 40vh;
+    }
+
+    .technology{
+        flex-direction: column;
+        padding: 5% 10%;
+    }
+
+    .tech-side {
+        width: 100%;
+        margin: 40px 0;
+    }
+
+    /* watch */
+    .watch{
+        padding: 2% 10% 2% 20%;
+    }
+
+    .watch img{
+        width: 500px;
+    }
+    /* !watch */
+}
+
+@media only screen and (max-width: 768px){
+
+    .cloth{
+        padding: 10% 0 0 0;
+    }
+
+    /* Watch section */
+    .watch{
+        padding: 15% 0 0% 0;
+        display:flex;
+        flex-direction: column;
+    }
+
+    .watch img{
+        width: 500px;
+        float: bottom;
+    }
+    /* !Watch section */
+}
+
+
+@media only screen and (max-width: 540px){
+    
+    body{
+        font-size: 14px;
+    }
+
+    .title-logo{
+        font-size: 32px;
+    }
+    
+    .title-section h1{
+        font-size: 16px;
+    }
+    
+    .title-section div a{
+        font-size: 14px
+    }
+    #background{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: 80vw;
+        height: 20vh;
+        margin-top: 70px;
+    }
+    
+    img[alt="bg-left"]{
+        position: absolute;
+        left: 10px;
+        bottom: 0;
+        width: 20%;
+        z-index: 1;
+    }
+    img[alt="bg-mid"]{
+        position: absolute;
+        left: calc(50% - 70%/ 2);
+        width: 70%;
+        bottom: 0;
+    }
+    
+    img[alt="bg-right"]{
+        position: absolute;
+        right: 0px;
+        bottom: 0;
+        width: 30%;
+        z-index: 1;
+    }
+
+    .cloth div img{
+        width: 300px;
+    }
+
+    .tech-side img{
+        width: 300px;
+    }
+
+    .tech-right img{
+        width: 200px;
+    }
+
+    .watch img{
+        width: 300px;
+        float: bottom;
+    }
+
+
+    .tech-side h1{
+        font-size: 18px;
+    }
+
+    .tech-side a {
+        color: rgb(85, 84, 84);
+    }
+
+    .tech-side a:hover{
+        color: black;
+    }
+
+
+    /* Footer section */
+
+    footer div:first-child{
+        background-color: rgb(21, 21, 21);
+        text-align: center;
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    footer div:first-child a{
+        color: rgb(191, 189, 189);
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    footer div:first-child a:hover{
+        color: rgb(255, 255, 255);
+    }
+    footer  img{
+        width: 100px;
+    }
+
+
+
+
+
+
+
+
+
+/* !Footer section */
+
+}

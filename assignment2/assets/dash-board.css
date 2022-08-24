@@ -1,0 +1,26 @@
+#dash-board{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#dash-board h1{
+    font-size: 56px;
+    color: black;
+    text-align: center;
+}
+#dash-board div{
+    margin: 10px;
+}
+
+
+@media only screen and (max-width: 540px){
+    #dash-board h1{
+        font-size: 38px;
+
+    }
+
+}
